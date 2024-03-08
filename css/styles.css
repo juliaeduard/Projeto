@@ -4,60 +4,85 @@ h1 {
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.sm {
-    background-color: rgb(248, 248, 160);
-    border-radius: 6%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,50fr));
-    grid-gap: 50px;
-
-}
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: beige;
 }
+@import url('https://fonts.googleapis.com/css27family-Poppins: wght@200;300;400;500;600; 700; 800; 900&display-swap');
+{
+margin: 0;
 
-p {
+padding: 0;
 
-    font-size: 16px;
-    line-height: 1.5;
-    font-style: initial;
-    text-align: justify;
+box-sizing: border-box;
 
-}
-
-a {
-
-    text-decoration: none;
-}
-
-img {
-    border-radius: 6%;
+font-family: 'Poppins', sans-serif;
 
 }
 
-#inici {
-    width: max-content;
+section {
+
+position: relative;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+width: 100%;
+
+height: 100vh;
+
+overflow-x: hidden;
 
 }
 
-#giflist {
-    height: 50%;
+section.bg {
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+pointer-events: none;}
+
+section .trees {
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+z-index : 100
+
+pointer-events: none;
+
 }
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-.button:hover {
-    background-color: #0056b3;
+
+section .girt {
+
+position: absolute;
+
+scale: 9.65;
+
+pointer-events: none;
+
+animation: animateGirl 15s linear infinite;
 }
