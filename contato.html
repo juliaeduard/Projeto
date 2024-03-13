@@ -29,7 +29,14 @@
 
       <div class="content">
        
+        <h1>Pet's Word</h1>
+        <small>Conheça nosso lar de adoção de pet's</small>
+        <p></p>
 
+        <h3>Entre em contato conosco</h3>
+        <iframe src=”https://maps.app.goo.gl/vKJfmmpQgPzujmbv7” width=”600” height=”450” frameborder=”0” aria-hidden="false" tabindex="0"></iframe>
+        <p>Se você tiver alguma dúvida, sugestão ou simplesmente quiser entrar em contato conosco, por favor, sinta-se à vontade para nos enviar uma mensagem. Estamos sempre prontos para ouvir você e responder da melhor maneira possível.</p>
+        
       </div>
     </div>
 
@@ -40,6 +47,49 @@
         <li><i class="fas fa-envelope"></i><a href="login.html"> Contato</a></li>
       </ul>
     </nav>
+
+
+  <main class="main-contact">
+      <form class="form-contact">
+          <label class="entry-label" for="name">Nome Completo</label>
+          <input class="entry" type="text" name="" id="name" required>
+
+          <label class="entry-label" for="email">Email</label>
+          <input class="entry" type="email" name="" id="email" required>
+
+          <label class="entry-label" for="phone">Número para contato</label>
+          <input class="entry" type="tel" name="" id="phone" required>
+
+          <label class="entry-label" for="message">Deixe aqui sua mensagem</label>
+          <textarea class="entry" name="" id="message" cols="30" rows="10"></textarea>
+
+          <div class="div-entry">
+              <p class="entry-label"> Como prefere nosso contato?</p>
+              <label class="entry-label" for="email-choice"><input type="radio" name="contact-choice"
+                      id="email-choice">Email</label>
+
+              <label class="entry-label" for="phone-choice"><input type="radio" name="contact-choice"
+                      id="phone-choice">Telefone</label>
+
+              <label class="entry-label" for="whatsapp-choice" lang="en"><input type="radio" name="contact-choice"
+                      id="whatsapp-choice">Whatsapp</label>
+          </div>
+          <label class="entry-label" for="day-period">Em qual horário prefere ser agendado?</label>
+          <select class="entry" name="day-period" id="">
+              <option value="none">---Selecione aqui</option>
+              <option value="morning">Manhã</option>
+              <option value="afternoon">Tarde</option>
+              <option value="evening">Noite</option>
+          </select>
+
+
+          <input class="entry" type="submit" value="Enviar formulário">
+      </form>
+  </main>
+  <footer class="footer">
+      <img src="logo-branco.png" alt="">
+      <h class="copyright">&copy; Copyright Pet's Word</h>
+  </footer>
 
     <script src="script.js"></script>
 
