@@ -2,13 +2,14 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripition"    content="Página de adoção de animais e doações. .">
-    <meta name="author" content="Júlia Eduarda Monteiro de Oliveira">
-    <title>pet words</title>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descripition" content="Página de adoção de animais e doações. .">
+  <meta name="author" content="Júlia Eduarda Monteiro de Oliveira">
+  <title>pet words</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contato.css">
 </head>
 
 <body class="inicio">
@@ -28,11 +29,11 @@
 
       </div>
       <button onclick="animar()" id="btn-menu">
-        
+
         <span class="linha"></span>
         <span class="linha"></span>
         <span class="linha"></span>
-        
+
 
       </button>
       <div class="menu-mobile" id="menu-mobile">
@@ -55,62 +56,61 @@
 
   </header>
 
-      <div class="content">
-       
-        <h1>Pet's Word</h1>
-        <small>Conheça nosso lar de adoção de pet's</small>
-        <p></p>
+  <section class="form-container">
+    <div class="container">
+      <form method="post" action="php/envia.php">
+        <h1>Entre em contato conosco</h1>
+        <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+        <div class="input-single">
+          <input class="input" type="text" id="nome" name="nome" required>
+          <label for="nome">Seu nome completo</label>
+        </div>
+        <div class="input-single">
+          <input class="input" type="email" id="email" name="email" required>
+          <label for="email">Seu e-mail</label>
+        </div>
+        <div class="input-single">
+          <input class="input" type="tel" id="telefone" name="telefone" required>
+          <label for="telefone">Seu telefone</label>
+        </div>
+        <div class="input-single">
+          <input class="input" type="text" id="message" name="nome" required>
+          <label class="message">Deixe aqui sua mensagem</label>
+        </div>
 
-        <h3>Entre em contato conosco</h3>
-        <iframe src=”https://maps.app.goo.gl/vKJfmmpQgPzujmbv7” width=”600” height=”450” frameborder=”0” aria-hidden="false" tabindex="0"></iframe>
-        <p>Se você tiver alguma dúvida, sugestão ou simplesmente quiser entrar em contato conosco, por favor, sinta-se à vontade para nos enviar uma mensagem. Estamos sempre prontos para ouvir você e responder da melhor maneira possível.</p>
-        
-      </div>
-    </div>
+        <div class="">
+          <p> Como prefere nosso contato?</p>
+          <label class="entry-label" for="email-choice"><input type="radio" name="contact-choice"
+              id="email-choice">Email</label>
 
-  <main class="main-contact">
-      <form class="form-contact">
-          <label class="entry-label" for="name">Nome Completo</label>
-          <input class="entry" type="text" name="" id="name" required>
+          <label class="entry-label" for="phone-choice"><input type="radio" name="contact-choice"
+              id="phone-choice">Telefone</label>
 
-          <label class="entry-label" for="email">Email</label>
-          <input class="entry" type="email" name="" id="email" required>
+          <label class="entry-label" for="whatsapp-choice" lang="en"><input type="radio" name="contact-choice"
+              id="whatsapp-choice">Whatsapp</label>
 
-          <label class="entry-label" for="phone">Número para contato</label>
-          <input class="entry" type="tel" name="" id="phone" required>
 
-          <label class="entry-label" for="message">Deixe aqui sua mensagem</label>
-          <textarea class="entry" name="" id="message" cols="30" rows="10"></textarea>
-
-          <div class="div-entry">
-              <p class="entry-label"> Como prefere nosso contato?</p>
-              <label class="entry-label" for="email-choice"><input type="radio" name="contact-choice"
-                      id="email-choice">Email</label>
-
-              <label class="entry-label" for="phone-choice"><input type="radio" name="contact-choice"
-                      id="phone-choice">Telefone</label>
-
-              <label class="entry-label" for="whatsapp-choice" lang="en"><input type="radio" name="contact-choice"
-                      id="whatsapp-choice">Whatsapp</label>
-          </div>
-          <label class="entry-label" for="day-period">Em qual horário prefere ser agendado?</label>
-          <select class="entry" name="day-period" id="">
-              <option value="none">---Selecione aqui</option>
-              <option value="morning">Manhã</option>
-              <option value="afternoon">Tarde</option>
-              <option value="evening">Noite</option>
+          <label class="horário" for="day-period">Em qual horário prefere ser agendado?</label>
+          <select class="entry" name="day-period">
+            <option value="none">---Selecione aqui</option>
+            <option value="morning">Manhã</option>
+            <option value="afternoon">Tarde</option>
+            <option value="evening">Noite</option>
           </select>
-
-
-          <input class="entry" type="submit" value="Enviar formulário">
+        </div>
+        
+        <input class="btn" type="submit" value="Enviar formulário">
       </form>
-  </main>
+
+
+    </div><!--container-->
+
+  </section>
   <footer class="footer">
-      <img src="logo-branco.png" alt="">
-      <h class="copyright">&copy; Copyright Pet's Word</h>
+    <h class="copyright">&copy; Copyright Pet's Word</h>
   </footer>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
