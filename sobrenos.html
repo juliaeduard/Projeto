@@ -2,41 +2,65 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="descripition"    content="Página de adoção de animais e doações. .">
-    <meta name="author" content="Júlia Eduarda Monteiro de Oliveira">
-    <title>pet words</title>
-    <link rel="shortcut icon" href="img/dog-house.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descripition" content="Página de adoção de animais e doações. .">
+  <meta name="author" content="Júlia Eduarda Monteiro de Oliveira">
+  <title>pet words</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body class="inicio">
-  <h1>Lar de Adoção</h1>
-  <P></P>
 
-  <div class="container">
-    <div class="circle-container">
-      <div class="circle">
-        <button id="close">
-          <i class="fas fa-times"></i>
-        </button>
-        <button id="open">
-          <i class="fas fa-bars"></i>
-        </button>
+  <header>
+    <link rel="stylesheet" href="css/menu.css">
+    <div class="container_menu">
+      <div class="logo"><img src="img/logotipo fab.png" alt="logotipo"></div>
+      <div class="menu">
+        <nav>
+
+          <a href="index.html"> inicio</a>
+          <a href="blog.html"> blog</a>
+          <a href="sobrenos.html"> sobre nos</a>
+          <a href="login.html"> contato</a>
+
+        </nav>
+
+      </div>
+      <button onclick="animar()" id="btn-menu">
+        
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+        
+
+      </button>
+      <div class="menu-mobile" id="menu-mobile">
+        <nav>
+
+          <a href="index.html"> inicio</a>
+          <a href="blog.html"> blog</a>
+          <a href="sobrenos.html"> sobre nos</a>
+          <a href="login.html"> contato</a>
+
+        </nav>
+
+      </div>
+      <div class="sociais">
+        <button><img src="img/instagram.png" alt="insta"></button>
+        <button><img src="img/youtube.png" alt="yt"></button>
+        <button><img src="img/twittermenu.png" alt="twitter"></button>
       </div>
     </div>
-  </div>
 
-  <nav>
-    <ul>
-      <li><i class="fas fa-home"></i><a href="index.html"> inicio</a></li>
-      <li><i class="fas fa-user-alt"></i><a href="doacoes.html"> doações</a></li>
-      <li><i class="fas fa-envelope"></i><a href="login.html"> Contato</a></li>
-    </ul>
-  </nav>
+  </header>
 
-    <script src="js/script.js"></script>
+
+
+  <script src="js/script.js"></script>
 
 </body>
 
