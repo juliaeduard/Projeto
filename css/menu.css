@@ -79,7 +79,7 @@ header {
     visibility: hidden;
     transition: .5s;
     overflow: hidden;
-
+    z-index: 1;
 
 }
 
@@ -152,6 +152,8 @@ header {
 
     #menu-mobile.abrir {
         visibility: visible;
+        position: absolute;
+        display: block;
         height: calc(100vh -200px);
 
 
