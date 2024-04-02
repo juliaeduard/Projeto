@@ -47,11 +47,11 @@ p {
 }
 
   .content img {
-    max-width: 100%;
+    max-width: 80%;
   }
   
   .content {
-    max-width: 1000px;
+    max-width: 1080px;
     margin: 50px auto;
   }
   
@@ -81,18 +81,18 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 50px;
+  height: 50vh;
+  border-radius: 25px;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
-  margin: 10px;
+  margin: 5px;
   position: relative;
-  -webkit-transition: all 700ms ease-in;
+  -webkit-transition: all 800ms ease-in;
 }
 
 .panel a {
-  font-size: 24px;
+  font-size: 30px;
   position: absolute;
   bottom: 20px;
   left: 20px;
