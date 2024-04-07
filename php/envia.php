@@ -7,9 +7,9 @@
     $paraa = "dudamonteirinho011@gmail.com";
     $assunto = "Formulário Pet's Word";
 
-    $corpo = "Nome: ".$nome."\n"."E-mail: ".$email."\n"."Telefone: ".$telefone;
+    $body = "Nome: ".$nome."\n"."E-mail: ".$email."\n"."Telefone: ".$telefone;
 
-    $cabeca = "From: dudamonteirinho011@gmail.com"."\n"."Reply-to: ".$email."\n"."X=Mailer:PHP/".phpversion();
+    $head = "From: dudamonteirinho011@gmail.com"."\n"."Reply-to: ".$email."\n"."X=Mailer:PHP/".phpversion();
 
     if(mail($para,$assunto,$corpo,$cabeca)){
         echo("Formulário enviado com sucesso!");
