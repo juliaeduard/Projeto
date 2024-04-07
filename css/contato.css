@@ -8,16 +8,17 @@ body {
 
 }
 
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 6%;
 }
 
-form {
+.form-container {
     background: #ffffffb4;
     max-width: 600px;
-    height: 75vh;
+    height: 90vh;
     padding: 40px;
     border-radius: 20px;
 }
@@ -104,5 +105,7 @@ form input[type=submit] {
     margin-left: 15vh;
     width: 50%;
     height: 45px;
-    font-size: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: #808080;
 }

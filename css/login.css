@@ -13,6 +13,7 @@ p {
     cursor: pointer;
     font-weight: 800;
     color: red;
+    width: 50vh;
 }
 
 h1 {
@@ -48,60 +49,31 @@ button {
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url('../img/fundo.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+
 }
 
-#container {
-    width: 50vh;
-    height: 80vh;
+
+.box-login {
+    width: 80vh;
+    height: 100vh;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 6px -1px #000000;
-    box-shadow: 0px 0px 6px -1px #000000;
-    background-image: linear-gradient(to top, #FF3131, #ff914d);
-    display: flex;
-    align-items: center;
-}
-
-#container .banner {
-    width: 60vh;
-    height: 80vh;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    background-image: linear-gradient(to top, #FF3131, #ff914d);
-    display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#container .box-login {
-    width: 60vh;
-    height: 80vh;
-    border-radius: 10px;
-    background: #fff;
+    background: #ffffff;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.banner_img {
-    width: 60vh;
-    height: 60vh;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
+
 
 .box-login .box {
-    width: 60vh;
-    height: 80vh;
+    width: 80vh;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -123,9 +95,8 @@ body {
 }
 
 .box-login .box-account {
-    width: 80%;
-    height: 80vh;
-
+    width: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -135,8 +106,8 @@ body {
 #bubble {
     cursor: pointer;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     right: 15px;
     bottom: 15px;
     border-radius: 50%;
@@ -154,7 +125,7 @@ body {
         justify-content: space-between;
     }
 
-    #container .banner {
+    #container {
         display: flex;
     }
 
