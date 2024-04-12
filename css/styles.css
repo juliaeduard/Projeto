@@ -117,11 +117,12 @@ p {
 
 footer{
   background-image: linear-gradient(to top, #FF3131, #ff914d);
+  display: block;
   text-align: center;
   color: #8f410d;
   font-size: 15px;
   font-family:Georgia, 'Times New Roman', Times, serif;
-  max-height: 15vw;
+  max-height: 20vw;
 
 }
 
