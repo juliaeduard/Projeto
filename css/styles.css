@@ -1,37 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap')
-
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap') * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
 }
-body{
+
+body {
   font-family: "Arial", sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
   width: 100vw;
   height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
-.container_story {
+.container_story .content{
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Kaushan Script', cursive;
   font-weight: 400;
+  
 }
 
 p {
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -46,28 +48,31 @@ p {
   font-weight: bold;
 }
 
-  .content img {
-    max-width: 80%;
-  }
-  
-  .content {
-    max-width: 1080px;
-    margin: 50px auto;
-  }
-  
-  .content h1 {
-    margin: 0;
-  }
-  
-  .content small {
-    color: #555;
-    font-style: italic;
-  }
-  
-  .content p {
-    color: #333;
-    line-height: 1.5;
-  }
+.content img {
+  max-width: 50%;
+  border-radius: 5px;
+}
+
+.content {
+  max-width: 1080px;
+  margin: 50px auto;
+}
+
+.content h1 {
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.content small {
+  color: #555;
+  font-style: italic;
+}
+
+.content p {
+  color: #333;
+  line-height: 1.5;
+}
 
 
 
@@ -81,19 +86,19 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 50vh;
-  border-radius: 25px;
+  height: 40vh;
+  border-radius: 15px;
   color: #fff;
   cursor: pointer;
   flex: 0.5;
-  margin: 5px;
+  margin: 2px;
   position: relative;
   -webkit-transition: all 800ms ease-in;
 }
 
 .panel a {
   font-size: 30px;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 20px;
   margin: 0;

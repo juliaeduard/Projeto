@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="descripition" content="Página de adoção de animais e doações. .">
   <meta name="author" content="Júlia Eduarda Monteiro de Oliveira">
-  <title>pet words</title>
+  <title>Contato</title>
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/contato.css">
 </head>
 
-<body class="inicio">
+<body >
   <header>
     <link rel="stylesheet" href="css/menu.css">
     <div class="container_menu">
@@ -56,9 +56,9 @@
 
   </header>
 
-  <section class="form-container">
+  <section class="form-container" >
     <div class="container">
-      <form method="post" action="php/envia.php">
+      <form action="envia.php" method="post">
         <h1>Entre em contato conosco</h1>
         <p>Preencha o formulário abaixo e entraremos em contato com você</p>
         <div class="input-single">
@@ -74,29 +74,26 @@
           <label for="telefone">Seu telefone</label>
         </div>
         <div class="input-single">
-          <input class="input" type="text" id="message" name="nome" required>
-          <label class="message">Deixe aqui sua mensagem</label>
+          <input class="input" type="text" id="message" name="mensagem" required>
+          <label class="message">Deixe uma mensagem para saber do que se trata</label>
         </div>
 
         <div>
           <label class="horario" for="day-period">Em qual horário prefere nos visitar?</label>
           <select class="entry" name="day-period">
-            <option value="none">---Selecione aqui</option>
-            <option value="morning">Manhã</option>
-            <option value="afternoon">Tarde</option>
-            <option value="evening">Noite</option>
+            <option value="none">Selecione aqui</option>
+            <option value="morning">9:00</option>
+            <option value="afternoon">15:00</option>
+            <option value="evening">19:00</option>
           </select>
         </div>
 
-       <a href="contato.html"><input class="btn" type="submit" value="Enviar formulário" ></a>
+<input class="btn" type="submit" value="Enviar" >
       </form>
     </div><!--container-->
   </section>
 
 
-  <footer class="footer">
-    <h class="copyright">&copy; Copyright Pet's Word</h>
-  </footer>
 
   <script src="js/script.js"></script>
 
