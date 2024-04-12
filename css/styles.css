@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap') * {
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap')
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +7,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   background-color: #f9f9f9;
   color: #333;
   margin: 0;
@@ -16,6 +17,11 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
+}
+main{
+  max-width: 800px;
+  text-align: justify;
+  margin: 50px auto;
 }
 
 .container_story .content{
@@ -27,13 +33,14 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Kaushan Script', cursive;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   font-weight: 400;
+
   
 }
 
 p {
-  justify-content: center;
+  text-align: justify;
   margin-bottom: 20px;
 }
 
@@ -54,7 +61,7 @@ p {
 }
 
 .content {
-  max-width: 1080px;
+  max-width: 800px;
   margin: 50px auto;
 }
 
@@ -83,10 +90,11 @@ p {
 
 
 .panel {
+  max-width: 800px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 40vh;
+  height: 50vh;
   border-radius: 15px;
   color: #fff;
   cursor: pointer;
@@ -96,22 +104,25 @@ p {
   -webkit-transition: all 800ms ease-in;
 }
 
-.panel a {
-  font-size: 30px;
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
-}
-
 .panel.active {
-  flex: 5;
+  max-width: 800px;
+  flex: 4;
 }
 
 .panel.active a {
+  max-width: 800px;
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
+}
+
+footer{
+  background-image: linear-gradient(to top, #FF3131, #ff914d);
+  text-align: center;
+  color: #8f410d;
+  font-size: 15px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  max-height: 15vw;
+
 }
 
 @media (max-width: 500px) {
